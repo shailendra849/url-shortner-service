@@ -1,4 +1,4 @@
-package com.thenriquedb.url_shortener;
+package com.shailendra.url_shortener-service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
