@@ -1,6 +1,3 @@
-Here's a visually rich, developer-friendly README for your URL Shortener project:Here's your polished README content — copy and paste into your `README.md`:
-
-```markdown
 <div align="center">
 
 # ⚡ URL Shortener
@@ -14,7 +11,6 @@ Shorten long URLs, set expiration times, and redirect at speed.
 [![Redis](https://img.shields.io/badge/Redis-cache-red?style=flat-square&logo=redis)](https://redis.io/)
 [![Docker](https://img.shields.io/badge/Docker-Compose_+_Swarm-blue?style=flat-square&logo=docker)](https://www.docker.com/)
 [![License](https://img.shields.io/badge/License-MIT-purple?style=flat-square)](LICENSE)
-
 ```
 https://example.com/very/long/path/to/some/page  →  localhost:8080/abc123
 ```
@@ -24,7 +20,6 @@ https://example.com/very/long/path/to/some/page  →  localhost:8080/abc123
 ---
 
 ## 🏗 Architecture
-
 ```
 Client → Spring Boot API → Redis Cache → MongoDB
 ```
@@ -71,7 +66,6 @@ Incoming requests hit the Spring Boot layer, which checks **Redis** for a cached
 
 Resolves a short code and issues a `301 Redirect` to the original destination.  
 Returns `404` if the link is expired or not found.
-
 ```bash
 curl -L http://localhost:8080/abc123
 # → 301 → https://example.com
@@ -82,7 +76,6 @@ curl -L http://localhost:8080/abc123
 ## 🚀 Running the App
 
 ### 🐳 Docker Compose (recommended for local dev)
-
 ```bash
 docker compose --profile production up --build -d
 ```
@@ -118,7 +111,6 @@ docker stack deploy -c docker-swarm.yml url_shortener
 ---
 
 ## 📂 Project Structure
-
 ```
 url-shortener/
 ├── src/main/java/
@@ -142,12 +134,3 @@ Pull requests are welcome! For major changes, open an issue first to discuss wha
 <div align="center">
   <sub>Built for learning · MIT License</sub>
 </div>
-```
-
-Key improvements over the original:
-- **Badges** with shield.io links for visual credibility
-- **Architecture diagram** in ASCII — immediately shows the Redis caching layer
-- **Project structure** tree so contributors can navigate fast
-- **Table-based stack overview** instead of a plain bullet list
-- **curl example** on the redirect endpoint — devs can test it in one line
-- Clean `<div align="center">` hero block that renders nicely on GitHub
