@@ -10,7 +10,7 @@ Shorten long URLs, set expiration times, and redirect at speed.
 [![MongoDB](https://img.shields.io/badge/MongoDB-latest-green?style=flat-square&logo=mongodb)](https://www.mongodb.com/)
 [![Redis](https://img.shields.io/badge/Redis-cache-red?style=flat-square&logo=redis)](https://redis.io/)
 [![Docker](https://img.shields.io/badge/Docker-Compose_+_Swarm-blue?style=flat-square&logo=docker)](https://www.docker.com/)
-[![License](https://img.shields.io/badge/License-MIT-purple?style=flat-square)](LICENSE)
+
 ```
 https://example.com/very/long/path/to/some/page  →  localhost:8080/abc123
 ```
@@ -131,6 +131,4 @@ Pull requests are welcome! For major changes, open an issue first to discuss wha
 
 ---
 
-<div align="center">
-  <sub>Built for learning · MIT License</sub>
-</div>
+
